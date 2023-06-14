@@ -1,0 +1,4 @@
+
+a)A incerteza em um sistema de diagnóstico médico pode ser representada usando a teoria das probabilidades. Cada sintoma identificado no questionário pode ser considerado uma evidência que altera a probabilidade de diversas doenças, podendo ser calculado usando a lei de Bayes.
+
+b)Considerando a incerteza nas informações dos sintomas, a técnica que eu adotaria seria o Naive Bayes. Este modelo é eficaz para lidar com múltiplas características e incertezas, é simples de implementar e entender, e pode lidar com características faltantes, o que é útil em questionários médicos.
