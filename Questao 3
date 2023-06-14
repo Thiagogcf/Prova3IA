@@ -1,0 +1,10 @@
+Questão 3: (5 Pontos) Tendo como base o conjunto de dados IRIS, disponível no método
+sklearn.datasets.load_iris() e o o método sklearn.tree.DecisionTreeClassifier() . Responda as
+questões:
+a) (2 pontos) Crie um modelo para cada critério da arvore de decisão gini”, “entropy”, “log_loss,
+treine o conjunto de dados Iris. Separe em 30% para teste. Apresente o algoritmo em Python e
+compare os métodos
+b) (1 ponto) Apresente para cada modelo da questão anterior qual a arvore de decisão resultante em
+modo gráfico. Deve ser feito em Python
+c) (2 pontos) Com base no método de Entropia, apresente todo o desenvolvimento do cálculo para
+gerar a arvore de decisão. Deve ser o calculo manual, e pode ser feito em planilha.

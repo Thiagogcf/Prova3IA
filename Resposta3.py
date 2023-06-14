@@ -21,7 +21,7 @@ for criterion, model in models.items():
     y_pred = model.predict(X_test)
     accuracy = accuracy_score(y_test, y_pred)
     print(f"Accuracy of model with {criterion} criterion: {accuracy:.2f}")
-
+ 
 
 # assuming models is your dictionary of trained models
 for criterion, model in models.items():

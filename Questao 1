@@ -1,0 +1,25 @@
+Questão 1: (3 pontos) Desenvolver algoritmos de aprendizado de máquina envolve muitas etapas e
+tarefas diferentes. Uma parte considerável do trabalho, por exemplo, envolve a adequação e o
+tratamento dos dados para que estejam de acordo com os tipos de variáveis demandadas por cada
+método utilizado, além da necessidade de se eliminar valores com ruído, incorretos e nulos, entre
+outros problemas.
+Na sequência, o esforço passa a ser, na maior parte, em determinar quais algoritmos e,
+principalmente, sob quais parametrizações serão mais eficazes na resolução do problema
+apresentado. Técnicas de amostragem, como a validação cruzada, são essenciais para aumentar a
+confiança dos resultados. No entanto, boa parte da busca pelos parâmetros resulta de testes e de
+avaliações do desempenho em cada situação.
+Diante do exposto, observe a seguinte situação:
+
+Imagine que você esteja trabalhando no setor de TI de um centro de diagnósticos. Normalmente, os exames são avaliados por médicos experientes e liberados após alguns dias. 
+Ocorre que durante campanhas de prevenção ao câncer de mama, uma quantidade muito maior do que a média de exames é feita, ocasionando atrasos consideráveis na liberação dos exames e. consequentemente, colocando em risco a vida dos pacientes, 
+Sabe-se que os médicos mantêm um padrão de informações destacadas nos relatórios, e os próprios equipamentos oferecem uma série de medidas e de informações que servem de base para posterior diagnóstico da doença. 
+Pensando nisso, soca decide desenvolver um método de aprendizado de máquina para processar os dados e oferecer um diagnóstico rápido. 
+Anda que esse método necessite de alguma validação médica, será de grande ajuda para os pacientes com mais chances de diagnósticos positivos sejam rapidamente avaliados. 
+Por sorte. a biblioteca do scikit-leam contém um conjunto de dados exatamente com o mesmo enfoque. diagnosticar câncer de mama. É possivel, portanto, testar e validar seus algoritmos diretamente sobre esse conjunto de dados, diminuindo o tempo de desenvolvimento. 
+A primeira alternativa é o algoritmo de Noivo Bayes, devido a grande quantidade de atributos, à simplicidade de desenvolvimento e à rápida convergencia Sabe-se que o método GaussianNB recebe apenas dois parâmetro, 
+Apesar de não ser possível determinar sem um estudo aprofundado as probabilidades das classes, a priori, é possível, por meio de testes sobre o conjunto de dados, determinar o melhor parâmetro de suavização da variância (var_smoothing). 
+Analisando as informações apresentadas, você deverá, a partir do conjunto de dados
+load_breast_cancer do scikit-learn, desenvolver um algoritmo em python que determine o melhor
+valor de var_smoothing para um erro de até 1.10-11. Considere o intervalo entre 1.10-11 e 1.10-8 e
+técnicas que possam minimizar os efeitos da aleatoriedade de amostragem com pelo menos 5
+amostras para cada parâmetro.

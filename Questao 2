@@ -1,0 +1,27 @@
+Questão 2: (2 pontos) A Medicina, durante boa parte de sua história e evolução, teve as
+experiências com indivíduos como fundamento básico de consenso para o diagnóstico de doenças.
+As tomadas de decisões eram geralmente realizadas pelos indivíduos com maiores níveis
+acadêmicos. O grau de precisão era baixo e incerto devido a muitas doenças terem em comum os
+mesmos sintomas, ou seja, sintomas como febre, falta de apetite, dores musculares, dores de cabeça,
+náusea são exemplos de sintomas comuns a diversas doenças.
+No início da década de 1970, surge a Medicina Baseada em Evidências (MBE), modelo de
+avaliação que era baseado em diversos segmentos como estatística, metodologias científicas,
+engenharia, epidemiologia clínica, etc. Esse modelo, na prática diária do profissional da área
+médica, começa na identificação dos problemas do paciente, na construção de um quadro clínico, na
+análise dos recursos e evidências para, por fim, chegar ao diagnóstico. Todavia, o uso da MBE não é
+tão fácil e simples. As incertezas são varáveis comuns e presentes nas tomadas de decisões médicas,
+principalmente, quando os sintomas são semelhantes.
+Nesse cenário, os sistemas especialistas podem ser usados para auxiliar o profissional especialista
+(médico e equipe) na tomada de decisões mais precisas com relação ao diagnóstico. Assim, suponha
+que você, um especialista em desenvolvimento de sistemas, foi contratado pelo médico João.
+
+João é médico especialista e precisa de um sistema que permita a avaliação da cardiopatia pediátrica. Senso assim, contratou você para criar um sistema especialista para a análise dos sintomas e ter como resultado um diagnóstico. 
+Você sabe que informações incertas armazenadas em uma base de conhecimento geram resultados imprecisos ou errados, e compreende a necessidade de associar técnicas ou métodos que permitem avaliar e reduzir a incerteza nas informações e na tomada de decisões. Logo, decidiu usar métodos probabilísticos. 
+Um modelo probabilistico pontua os documentos por sua probabilidade estimada de relevancia com relação à consulta, ou seja, precisa definir a categoria que documento pertence: a relevante ou a nao relevante. 
+
+Nessa situação, você precisa levar em conta que:
+a) (1 ponto) O diagnóstico médico é realizado com base em evidências, então, explique como a
+incerteza pode ser representada em um sistema de diagnóstico médico, sendo este previamente
+realizado por meio de um questionário.
+b) (1 ponto) Dado o grau de incerteza nas informações de sintomas médicos, qual técnica você
+adotaria? Justifique a sua resposta.
