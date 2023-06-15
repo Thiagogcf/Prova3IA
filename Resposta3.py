@@ -37,5 +37,23 @@ for criterio, modelo in modelos.items():
     plt.title(f"Árvore de decisão usando critério {criterio}")
     plt.show()
 
-#Calculo
-#Entropia(S) = - 0.33*log2(0.33) - 0.33*log2(0.33) - 0.33*log2(0.33) = 1.58347
+#Calculo - Questão C
+
+# Classe 0 (Setosa): 35 amostras
+# Classe 1 (Versicolour): 35 amostras
+# Classe 2 (Virginica): 30 amostras
+
+# calcula as entropias: 
+
+# Proporção Classe 0 (Setosa): 35/100 = 0.35
+# Proporção Classe 1 (Versicolour): 35/100 = 0.35
+# Proporção Classe 2 (Virginica): 30/100 = 0.30
+
+# Agora, substituímos essas proporções na fórmula da entropia:
+
+# Entropia = -∑ (p_i * log2(p_i))
+#          = - [0.35*log2(0.35) + 0.35*log2(0.35) + 0.30*log2(0.30)]
+
+# resultado: 
+
+# = -[0.67489+0.67489+0.5]
