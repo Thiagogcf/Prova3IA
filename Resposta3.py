@@ -37,6 +37,9 @@ for criterio, modelo in modelos.items():
     plt.title(f"Árvore de decisão usando critério {criterio}")
     plt.show()
 
+#Referencias https://towardsdatascience.com/introduction-to-decision-tree-classifiers-from-scikit-learn-32cd5d23f4d
+# https://scikit-learn.org/stable/modules/generated/sklearn.tree.DecisionTreeClassifier.html
+
 #Calculo - Questão C
 
 # Classe 0 (Setosa): 35 amostras
