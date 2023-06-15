@@ -11,6 +11,10 @@ from math import log2
 # Load the Iris dataset
 iris = load_iris()
 
+# print("Atributos:", iris.feature_names)
+# print("Primeira instância:", iris.data[0])
+
+
 # Split the dataset into a training set and a test set
 X_train, X_test, y_train, y_test = train_test_split(iris.data, iris.target, test_size=0.3, random_state=42)
 
@@ -38,3 +42,6 @@ for criterion, model in models.items():
     plot_tree(model, filled=True, feature_names=iris.feature_names, class_names=iris.target_names)
     plt.title(f"Decision tree using {criterion} criterion")
     plt.show()
+
+#Calculo
+#Entropia(S) = - 0.33*log2(0.33) - 0.33*log2(0.33) - 0.33*log2(0.33) = 1.58347
