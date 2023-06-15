@@ -22,7 +22,7 @@ frequencias = np.array(list(Counter(treino_y).values())) / len(treino_y)
 entropia = -np.sum(frequencias * np.log2(frequencias))
 print(f"Entropia do conjunto de treinamento: {entropia}")
 
-criterios = ["gini", "entropy"]
+criterios = ["gini", "entropy","log_loss"]
 modelos = {criterio: DecisionTreeClassifier(criterion=criterio, random_state=42) for criterio in criterios}
 
 for criterio, modelo in modelos.items():
