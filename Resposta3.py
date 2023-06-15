@@ -39,3 +39,8 @@ for criterio, modelo in modelos.items():
 
 #Calculo
 #Entropia(S) = - 0.33*log2(0.33) - 0.33*log2(0.33) - 0.33*log2(0.33) = 1.58347
+
+
+
+#Referencias https://towardsdatascience.com/introduction-to-decision-tree-classifiers-from-scikit-learn-32cd5d23f4d
+# https://scikit-learn.org/stable/modules/generated/sklearn.tree.DecisionTreeClassifier.html
