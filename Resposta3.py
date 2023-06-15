@@ -8,39 +8,40 @@ import matplotlib.pyplot as plt
 from collections import Counter
 from math import log2
 
-# Load the Iris dataset
+# Carregar conjunto de dados
 iris = load_iris()
+
 
 # print("Atributos:", iris.feature_names)
 # print("Primeira instância:", iris.data[0])
 
 
-# Split the dataset into a training set and a test set
-X_train, X_test, y_train, y_test = train_test_split(iris.data, iris.target, test_size=0.3, random_state=42)
+# Dividir os dados
+treino_X, teste_X, treino_y, teste_y = train_test_split(iris.data, iris.target, test_size=0.3, random_state=42)
 
-# Calculate the frequencies of each class in the training set
-frequencies = np.array(list(Counter(y_train).values())) / len(y_train)
+# Calcular frequencias
+frequencias = np.array(list(Counter(treino_y).values())) / len(treino_y)
 
-# Calculate the entropy
-entropy = -np.sum(frequencies * np.log2(frequencies))
-print(f"Entropy of the training set: {entropy}")
+# Calcular entropia
+entropia = -np.sum(frequencias * np.log2(frequencias))
+print(f"Entropia do conjunto de treinamento: {entropia}")
 
-# Create a DecisionTreeClassifier for each criterion
-criteria = ["gini", "entropy"]
-models = {criterion: DecisionTreeClassifier(criterion=criterion, random_state=42) for criterion in criteria}
+# Critérios para os modelos
+criterios = ["gini", "entropy"]
+modelos = {criterio: DecisionTreeClassifier(criterion=criterio, random_state=42) for criterio in criterios}
 
-# Train each model and evaluate its accuracy
-for criterion, model in models.items():
-    model.fit(X_train, y_train)
-    y_pred = model.predict(X_test)
-    accuracy = accuracy_score(y_test, y_pred)
-    print(f"Accuracy of model with {criterion} criterion: {accuracy:.2f}")
+# Treinar modelos e calcular acurácia
+for criterio, modelo in modelos.items():
+    modelo.fit(treino_X, treino_y)
+    pred_y = modelo.predict(teste_X)
+    acuracia = accuracy_score(teste_y, pred_y)
+    print(f"Acurácia do modelo com critério {criterio}: {acuracia:.2f}")
 
-# Plot the decision tree for each model
-for criterion, model in models.items():
+# Plotar as árvores de decisão
+for criterio, modelo in modelos.items():
     plt.figure(figsize=(12, 8))
-    plot_tree(model, filled=True, feature_names=iris.feature_names, class_names=iris.target_names)
-    plt.title(f"Decision tree using {criterion} criterion")
+    plot_tree(modelo, filled=True, feature_names=iris.feature_names, class_names=iris.target_names)
+    plt.title(f"Árvore de decisão usando critério {criterio}")
     plt.show()
 
 #Calculo
